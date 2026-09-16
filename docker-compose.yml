@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: access-hub-postgres
+    restart: unless-stopped
+    ports:
+      - '5436:5432'
+    environment:
+      POSTGRES_USER: accesshub
+      POSTGRES_PASSWORD: accesshub
+      POSTGRES_DB: accesshub
+    volumes:
+      - access_hub_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U accesshub -d accesshub']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  access_hub_pg_data:
