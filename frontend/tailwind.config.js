@@ -20,6 +20,10 @@ export default {
       boxShadow: {
         glow: '0 20px 60px rgba(79, 142, 247, 0.12)',
       },
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+    },
     },
   },
   plugins: [],

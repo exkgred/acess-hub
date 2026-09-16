@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Navigate, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
-import { LayoutGrid, LogOut, Shield, Users } from 'lucide-react'
+import { DoorOpen, LayoutGrid, LogOut, Shield, Users } from 'lucide-react'
+import { initials, PACKAGE_LABEL } from '@/lib/brand'
 import { useAuthStore } from '@/stores/auth'
 import LoginPage from '@/pages/LoginPage'
 import HubPage from '@/pages/HubPage'
@@ -25,7 +26,7 @@ function Layout({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
           <NavLink to="/" className="flex shrink-0 items-center gap-2 font-semibold text-ink-300">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white">
-              <LayoutGrid size={16} />
+              <DoorOpen size={16} />
             </span>
             <span>Átrio</span>
           </NavLink>
@@ -42,13 +43,20 @@ function Layout({ children }: { children: React.ReactNode }) {
                 {item.label}
               </NavLink>
             ))}
-            <span className="ml-2 hidden text-ink-500 lg:inline">
-              {user?.name}
-              {user?.packageSlug ? ` · ${user.packageSlug}` : ''}
-            </span>
+            {user && (
+              <div className="ml-3 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 py-1 pl-1 pr-3">
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-accent/20 text-[11px] font-semibold text-accent">
+                  {initials(user.name)}
+                </span>
+                <span className="hidden text-ink-300 lg:inline">{user.name.split(' ')[0]}</span>
+                <span className="rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-accent">
+                  {PACKAGE_LABEL[user.packageSlug]}
+                </span>
+              </div>
+            )}
             <button
               type="button"
-              className="ml-2 text-ink-500 hover:text-ink-300"
+              className="ml-1 rounded-md px-3 py-2 hover:bg-white/5 hover:text-ink-300"
               onClick={() => {
                 logout()
                 navigate('/login')
@@ -57,23 +65,30 @@ function Layout({ children }: { children: React.ReactNode }) {
               Sair
             </button>
           </nav>
-          <button
-            type="button"
-            className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm md:hidden"
-            onClick={() => {
-              logout()
-              navigate('/login')
-            }}
-          >
-            <span className="inline-flex items-center gap-2">
-              <LogOut size={14} /> Sair
-            </span>
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            {user && (
+              <span className="rounded-full bg-accent/15 px-2 py-1 text-[10px] font-medium uppercase text-accent">
+                {PACKAGE_LABEL[user.packageSlug]}
+              </span>
+            )}
+            <button
+              type="button"
+              className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm"
+              onClick={() => {
+                logout()
+                navigate('/login')
+              }}
+            >
+              <span className="inline-flex items-center gap-2">
+                <LogOut size={14} /> Sair
+              </span>
+            </button>
+          </div>
         </div>
       </header>
-      <main className="mx-auto max-w-6xl px-4 py-4 md:py-6">{children}</main>
+      <main className="mx-auto max-w-6xl px-4 py-5 md:py-8">{children}</main>
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-ink-950/90 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden">
-        <div className={`grid`} style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}>
+        <div className="grid" style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}>
           {items.map((item) => (
             <NavLink
               key={item.to}
