@@ -100,6 +100,8 @@ O frontend sobe sozinho. Com `VITE_DEMO=true` a API é mockada no browser.
 
 Login da demo: `recruiter@atrio.dev` / `password123` (já vem preenchido).
 
+Demo: [https://acess-hub-five.vercel.app/](https://acess-hub-five.vercel.app/)
+
 Código: [https://github.com/exkgred/acess-hub](https://github.com/exkgred/acess-hub)
 
 ---
