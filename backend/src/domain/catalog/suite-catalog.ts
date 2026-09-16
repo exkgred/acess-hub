@@ -114,7 +114,7 @@ export const SUITE_APPS: SuiteApp[] = [
     description:
       'Visitante conversa em linguagem natural; o log segue depois para o painel.',
     stack: 'Vercel · Cohere Command A',
-    url: 'https://chatbot-cohere.vercel.app/',
+    url: 'https://chatbot-cohere-theta.vercel.app/',
     github: 'https://github.com/exkgred/chatbot-cohere',
     category: 'plataforma',
     packages: ['FULL', 'COMERCIAL', 'OPERACAO'],
