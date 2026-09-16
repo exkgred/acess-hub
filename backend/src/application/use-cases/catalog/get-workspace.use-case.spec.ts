@@ -25,7 +25,7 @@ function mockUserRepo(): jest.Mocked<UserRepository> {
 const member: User = {
   id: 'm1',
   name: 'Ana',
-  email: 'comercial@porti.dev',
+  email: 'comercial@atrio.dev',
   passwordHash: 'hash',
   role: 'MEMBER',
   packageSlug: 'COMERCIAL',
@@ -37,7 +37,7 @@ const recruiter: User = {
   ...member,
   id: 'r1',
   name: 'Recrutador',
-  email: 'recruiter@porti.dev',
+  email: 'recruiter@atrio.dev',
   role: 'RECRUITER',
   packageSlug: 'FULL',
 };
@@ -82,7 +82,7 @@ describe('GetWorkspaceUseCase', () => {
       ...recruiter,
       id: 'a1',
       role: 'ADMIN',
-      email: 'admin@porti.dev',
+      email: 'admin@atrio.dev',
     });
     const useCase = new GetWorkspaceUseCase(userRepo);
     const result = await useCase.execute({ userId: 'a1' });

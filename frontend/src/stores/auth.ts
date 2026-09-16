@@ -11,23 +11,23 @@ interface AuthState {
 }
 
 export const useAuthStore = create<AuthState>((set) => ({
-  user: readJson('porti.user'),
-  accessToken: localStorage.getItem('porti.access'),
-  refreshToken: localStorage.getItem('porti.refresh'),
+  user: readJson('atrio.user'),
+  accessToken: localStorage.getItem('atrio.access'),
+  refreshToken: localStorage.getItem('atrio.refresh'),
   setSession: (user, accessToken, refreshToken) => {
-    localStorage.setItem('porti.user', JSON.stringify(user))
-    localStorage.setItem('porti.access', accessToken)
-    localStorage.setItem('porti.refresh', refreshToken)
+    localStorage.setItem('atrio.user', JSON.stringify(user))
+    localStorage.setItem('atrio.access', accessToken)
+    localStorage.setItem('atrio.refresh', refreshToken)
     set({ user, accessToken, refreshToken })
   },
   setUser: (user) => {
-    localStorage.setItem('porti.user', JSON.stringify(user))
+    localStorage.setItem('atrio.user', JSON.stringify(user))
     set({ user })
   },
   logout: () => {
-    localStorage.removeItem('porti.user')
-    localStorage.removeItem('porti.access')
-    localStorage.removeItem('porti.refresh')
+    localStorage.removeItem('atrio.user')
+    localStorage.removeItem('atrio.access')
+    localStorage.removeItem('atrio.refresh')
     set({ user: null, accessToken: null, refreshToken: null })
   },
 }))

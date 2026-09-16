@@ -1,6 +1,6 @@
-# Porti Access
+# Átrio
 
-Gerenciador de acessos da suíte de portfólio. Um login, um pacote (Full / Comercial / Operação) e os sistemas no mesmo launchpad — como um produto, não cinco demos soltas.
+O hall da suíte. Um login, um pacote (Full / Comercial / Operação) e os sistemas no mesmo launchpad — como um produto, não cinco demos soltas.
 
 Backend em NestJS (Clean Architecture), frontend em React + Vite, PostgreSQL e Prisma.
 
@@ -84,21 +84,23 @@ App: http://localhost:5174
 
 | E-mail | Senha | Papel | Pacote |
 |---|---|---|---|
-| `recruiter@porti.dev` | `password123` | RECRUITER | Full (vê tudo + auditoria) |
-| `admin@porti.dev` | `password123` | ADMIN | Full (troca pacotes) |
-| `comercial@porti.dev` | `password123` | MEMBER | Comercial (ERP + loja + chat) |
-| `operacao@porti.dev` | `password123` | MEMBER | Operação (Discador + Kanban + chat) |
+| `recruiter@atrio.dev` | `password123` | RECRUITER | Full (vê tudo + auditoria) |
+| `admin@atrio.dev` | `password123` | ADMIN | Full (troca pacotes) |
+| `comercial@atrio.dev` | `password123` | MEMBER | Comercial (ERP + loja + chat) |
+| `operacao@atrio.dev` | `password123` | MEMBER | Operação (Discador + Kanban + chat) |
 
 ## Demo na Vercel (sem backend)
 
 O frontend sobe sozinho. Com `VITE_DEMO=true` a API é mockada no browser.
 
-1. No [Vercel](https://vercel.com/new) importe o repositório
+1. No [Vercel](https://vercel.com/new) importe `exkgred/acess-hub`
 2. **Root Directory:** `frontend` (ou deixe a raiz: o `vercel.json` já builda `frontend`)
 3. Framework: Vite
 4. Variável: `VITE_DEMO=true` (já vem em `frontend/.env.production`)
 
-Login da demo: `recruiter@porti.dev` / `password123` (já vem preenchido).
+Login da demo: `recruiter@atrio.dev` / `password123` (já vem preenchido).
+
+Código: [https://github.com/exkgred/acess-hub](https://github.com/exkgred/acess-hub)
 
 ---
 

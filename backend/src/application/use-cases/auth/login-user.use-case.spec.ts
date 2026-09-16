@@ -18,7 +18,7 @@ describe('LoginUserUseCase', () => {
   const user: User = {
     id: '1',
     name: 'Ana',
-    email: 'comercial@porti.dev',
+    email: 'comercial@atrio.dev',
     passwordHash: 'hash',
     role: 'MEMBER',
     packageSlug: 'COMERCIAL',

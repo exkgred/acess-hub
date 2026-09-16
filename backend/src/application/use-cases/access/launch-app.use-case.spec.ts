@@ -28,7 +28,7 @@ function mockLogRepo(): jest.Mocked<AccessLogRepository> {
 const member: User = {
   id: 'm1',
   name: 'Ana',
-  email: 'comercial@porti.dev',
+  email: 'comercial@atrio.dev',
   passwordHash: 'hash',
   role: 'MEMBER',
   packageSlug: 'COMERCIAL',
@@ -40,7 +40,7 @@ const recruiter: User = {
   ...member,
   id: 'r1',
   name: 'Recrutador',
-  email: 'recruiter@porti.dev',
+  email: 'recruiter@atrio.dev',
   role: 'RECRUITER',
   packageSlug: 'FULL',
 };

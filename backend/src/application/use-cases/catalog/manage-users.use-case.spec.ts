@@ -31,7 +31,7 @@ function mockUserRepo(): jest.Mocked<UserRepository> {
 const member: User = {
   id: 'm1',
   name: 'Ana',
-  email: 'comercial@porti.dev',
+  email: 'comercial@atrio.dev',
   passwordHash: 'hash',
   role: 'MEMBER',
   packageSlug: 'COMERCIAL',

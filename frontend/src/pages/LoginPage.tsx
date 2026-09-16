@@ -6,16 +6,16 @@ import type { Envelope, PublicUser } from '@/lib/types'
 import { useAuthStore } from '@/stores/auth'
 
 const PERSONAS = [
-  { email: 'recruiter@porti.dev', label: 'Recrutador', hint: 'vê a suíte inteira' },
-  { email: 'comercial@porti.dev', label: 'Comercial', hint: 'ERP + loja' },
-  { email: 'operacao@porti.dev', label: 'Operação', hint: 'Discador + Kanban' },
-  { email: 'admin@porti.dev', label: 'Admin', hint: 'troca pacotes' },
+  { email: 'recruiter@atrio.dev', label: 'Recrutador', hint: 'vê a suíte inteira' },
+  { email: 'comercial@atrio.dev', label: 'Comercial', hint: 'ERP + loja' },
+  { email: 'operacao@atrio.dev', label: 'Operação', hint: 'Discador + Kanban' },
+  { email: 'admin@atrio.dev', label: 'Admin', hint: 'troca pacotes' },
 ] as const
 
 export default function LoginPage() {
   const navigate = useNavigate()
   const setSession = useAuthStore((s) => s.setSession)
-  const [email, setEmail] = useState('recruiter@porti.dev')
+  const [email, setEmail] = useState('recruiter@atrio.dev')
   const [password, setPassword] = useState('password123')
   const [error, setError] = useState('')
 
@@ -44,9 +44,9 @@ export default function LoginPage() {
           <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-white">
             <LayoutGrid size={22} />
           </div>
-          <h1 className="text-2xl font-bold text-ink-300">Porti Access</h1>
+          <h1 className="text-2xl font-bold text-ink-300">Átrio</h1>
           <p className="mt-1 text-sm text-ink-500">
-            Um login. Um pacote. Os sistemas da suíte no mesmo lugar.
+            O hall da suíte. Um crachá, as portas que o pacote libera.
           </p>
         </div>
         <label className="block text-sm font-medium text-ink-500">

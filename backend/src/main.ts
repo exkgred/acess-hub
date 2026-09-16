@@ -23,9 +23,9 @@ async function bootstrap(): Promise<void> {
   app.useGlobalInterceptors(new ResponseInterceptor());
 
   const swagger = new DocumentBuilder()
-    .setTitle('Porti Access API')
+    .setTitle('Átrio API')
     .setDescription(
-      'Gerenciador de acessos da suíte de portfólio. Login único, pacotes (Full / Comercial / Operação) e auditoria de lançamentos. Envelope { success, data, meta }. Prefixo /api/v1.',
+      'Hall de acessos da suíte. Login único, pacotes (Full / Comercial / Operação) e auditoria de lançamentos. Envelope { success, data, meta }. Prefixo /api/v1.',
     )
     .setVersion('1.0')
     .addBearerAuth()

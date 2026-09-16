@@ -8,7 +8,7 @@ import type {
   Workspace,
 } from './types'
 
-const STORAGE_KEY = 'porti-access-demo-v1'
+const STORAGE_KEY = 'atrio-demo-v1'
 
 interface DemoUser extends PublicUser {
   password: string
@@ -32,7 +32,7 @@ function seed(): DemoState {
     {
       id: 'user-recruiter',
       name: 'Recrutador',
-      email: 'recruiter@porti.dev',
+      email: 'recruiter@atrio.dev',
       role: 'RECRUITER',
       packageSlug: 'FULL',
       password: 'password123',
@@ -42,7 +42,7 @@ function seed(): DemoState {
     {
       id: 'user-admin',
       name: 'Admin da suíte',
-      email: 'admin@porti.dev',
+      email: 'admin@atrio.dev',
       role: 'ADMIN',
       packageSlug: 'FULL',
       password: 'password123',
@@ -52,7 +52,7 @@ function seed(): DemoState {
     {
       id: 'user-comercial',
       name: 'Ana Comercial',
-      email: 'comercial@porti.dev',
+      email: 'comercial@atrio.dev',
       role: 'MEMBER',
       packageSlug: 'COMERCIAL',
       password: 'password123',
@@ -62,7 +62,7 @@ function seed(): DemoState {
     {
       id: 'user-operacao',
       name: 'Bruno Operação',
-      email: 'operacao@porti.dev',
+      email: 'operacao@atrio.dev',
       role: 'MEMBER',
       packageSlug: 'OPERACAO',
       password: 'password123',
@@ -72,13 +72,13 @@ function seed(): DemoState {
   ]
 
   const logs: AccessLog[] = [
-    { id: 'log-1', userId: 'user-recruiter', appSlug: 'vendacore', launchedAt: hoursAgo(2), userName: 'Recrutador', userEmail: 'recruiter@porti.dev' },
-    { id: 'log-2', userId: 'user-recruiter', appSlug: 'discador', launchedAt: hoursAgo(5), userName: 'Recrutador', userEmail: 'recruiter@porti.dev' },
-    { id: 'log-3', userId: 'user-comercial', appSlug: 'smarty', launchedAt: hoursAgo(8), userName: 'Ana Comercial', userEmail: 'comercial@porti.dev' },
-    { id: 'log-4', userId: 'user-comercial', appSlug: 'vendacore', launchedAt: hoursAgo(26), userName: 'Ana Comercial', userEmail: 'comercial@porti.dev' },
-    { id: 'log-5', userId: 'user-operacao', appSlug: 'kanban', launchedAt: hoursAgo(3), userName: 'Bruno Operação', userEmail: 'operacao@porti.dev' },
-    { id: 'log-6', userId: 'user-operacao', appSlug: 'discador', launchedAt: hoursAgo(12), userName: 'Bruno Operação', userEmail: 'operacao@porti.dev' },
-    { id: 'log-7', userId: 'user-admin', appSlug: 'observability', launchedAt: hoursAgo(30), userName: 'Admin da suíte', userEmail: 'admin@porti.dev' },
+    { id: 'log-1', userId: 'user-recruiter', appSlug: 'vendacore', launchedAt: hoursAgo(2), userName: 'Recrutador', userEmail: 'recruiter@atrio.dev' },
+    { id: 'log-2', userId: 'user-recruiter', appSlug: 'discador', launchedAt: hoursAgo(5), userName: 'Recrutador', userEmail: 'recruiter@atrio.dev' },
+    { id: 'log-3', userId: 'user-comercial', appSlug: 'smarty', launchedAt: hoursAgo(8), userName: 'Ana Comercial', userEmail: 'comercial@atrio.dev' },
+    { id: 'log-4', userId: 'user-comercial', appSlug: 'vendacore', launchedAt: hoursAgo(26), userName: 'Ana Comercial', userEmail: 'comercial@atrio.dev' },
+    { id: 'log-5', userId: 'user-operacao', appSlug: 'kanban', launchedAt: hoursAgo(3), userName: 'Bruno Operação', userEmail: 'operacao@atrio.dev' },
+    { id: 'log-6', userId: 'user-operacao', appSlug: 'discador', launchedAt: hoursAgo(12), userName: 'Bruno Operação', userEmail: 'operacao@atrio.dev' },
+    { id: 'log-7', userId: 'user-admin', appSlug: 'observability', launchedAt: hoursAgo(30), userName: 'Admin da suíte', userEmail: 'admin@atrio.dev' },
   ]
 
   return { users, logs, currentUserId: null }

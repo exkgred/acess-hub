@@ -35,7 +35,7 @@ export class AuthController {
   @ApiOperation({
     summary: 'Login no hub',
     description:
-      'Autentica contra Ambientes do Porti Access. O pacote do usuário (Full, Comercial ou Operação) define quais sistemas aparecem no launchpad. Recrutador e admin veem todos os módulos.',
+      'Login no Átrio. O pacote do usuário (Full, Comercial ou Operação) define quais sistemas aparecem no launchpad. Recrutador e admin veem todos os módulos.',
   })
   login(@Body() dto: LoginDto) {
     return this.loginUser.execute(dto);

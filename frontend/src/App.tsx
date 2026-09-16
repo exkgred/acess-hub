@@ -27,7 +27,7 @@ function Layout({ children }: { children: React.ReactNode }) {
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white">
               <LayoutGrid size={16} />
             </span>
-            <span>Porti Access</span>
+            <span>Átrio</span>
           </NavLink>
           <nav className="hidden items-center gap-1 text-sm text-ink-500 md:flex">
             {items.map((item) => (
@@ -103,7 +103,7 @@ function Private({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   useEffect(() => {
-    document.title = 'Porti Access'
+    document.title = 'Átrio'
   }, [])
 
   return (
