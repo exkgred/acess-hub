@@ -14,6 +14,19 @@ export const SUITE_APPS: SuiteApp[] = [
     credentials: { email: 'admin@vendacore.com', password: 'password123' },
   },
   {
+    slug: 'nexo',
+    name: 'Nexo CRM',
+    tagline: 'Funil, jornada e bus de eventos',
+    description:
+      'Lead do Discador/chat vira oportunidade; ganho dispara handoff ao VendaCore. Outbox com ingest da suíte.',
+    stack: 'NestJS · React · PostgreSQL',
+    url: 'https://nexo-theta-ten.vercel.app/',
+    github: 'https://github.com/exkgred/nexo',
+    category: 'comercial',
+    packages: ['FULL', 'COMERCIAL'],
+    credentials: { email: 'ana@nexo.dev', password: 'password123' },
+  },
+  {
     slug: 'smarty',
     name: 'Smarty Hardware',
     tagline: 'Loja, checkout e painel de balcão',
@@ -85,7 +98,7 @@ export const SUITE_PACKAGES: SuitePackage[] = [
   {
     slug: 'COMERCIAL',
     name: 'Comercial',
-    description: 'ERP e loja para quem vende e fatura.',
+    description: 'ERP, CRM e loja para quem vende e fatura.',
     appSlugs: SUITE_APPS.filter((app) => app.packages.includes('COMERCIAL')).map((app) => app.slug),
   },
   {
