@@ -75,6 +75,7 @@ function seed(): DemoState {
     { id: 'log-1', userId: 'user-recruiter', appSlug: 'vendacore', launchedAt: hoursAgo(2), userName: 'Recrutador', userEmail: 'recruiter@atrio.dev' },
     { id: 'log-2', userId: 'user-recruiter', appSlug: 'discador', launchedAt: hoursAgo(5), userName: 'Recrutador', userEmail: 'recruiter@atrio.dev' },
     { id: 'log-3', userId: 'user-comercial', appSlug: 'smarty', launchedAt: hoursAgo(8), userName: 'Ana Comercial', userEmail: 'comercial@atrio.dev' },
+    { id: 'log-3b', userId: 'user-comercial', appSlug: 'nexo', launchedAt: hoursAgo(4), userName: 'Ana Comercial', userEmail: 'comercial@atrio.dev' },
     { id: 'log-4', userId: 'user-comercial', appSlug: 'vendacore', launchedAt: hoursAgo(26), userName: 'Ana Comercial', userEmail: 'comercial@atrio.dev' },
     { id: 'log-5', userId: 'user-operacao', appSlug: 'kanban', launchedAt: hoursAgo(3), userName: 'Bruno Operação', userEmail: 'operacao@atrio.dev' },
     { id: 'log-6', userId: 'user-operacao', appSlug: 'discador', launchedAt: hoursAgo(12), userName: 'Bruno Operação', userEmail: 'operacao@atrio.dev' },

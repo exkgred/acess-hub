@@ -52,13 +52,13 @@ export default function LoginPage() {
             <span className="block text-accent">As portas que o pacote libera.</span>
           </h1>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-500">
-            O Átrio reúne VendaCore, Smarty, Kanban, Discador, observabilidade e o chat.
+            O Átrio reúne VendaCore, Nexo, Smarty, Kanban, Discador, observabilidade e o chat.
             Comercial vê vendas. Operação vê execução. Recrutador vê a suíte inteira.
           </p>
         </div>
         <ul className="relative grid gap-3 text-sm text-ink-500">
           <li className="rounded-xl border border-white/10 bg-ink-900/50 px-4 py-3">Full — todas as alas</li>
-          <li className="rounded-xl border border-white/10 bg-ink-900/50 px-4 py-3">Comercial — ERP e loja</li>
+          <li className="rounded-xl border border-white/10 bg-ink-900/50 px-4 py-3">Comercial — ERP, CRM e loja</li>
           <li className="rounded-xl border border-white/10 bg-ink-900/50 px-4 py-3">Operação — discador e kanban</li>
         </ul>
       </aside>

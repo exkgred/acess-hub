@@ -2,6 +2,7 @@ export type UserRole = 'ADMIN' | 'RECRUITER' | 'MEMBER'
 export type PackageSlug = 'FULL' | 'COMERCIAL' | 'OPERACAO'
 export type AppSlug =
   | 'vendacore'
+  | 'nexo'
   | 'smarty'
   | 'kanban'
   | 'discador'

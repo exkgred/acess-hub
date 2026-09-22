@@ -5,6 +5,7 @@ import {
   Copy,
   ExternalLink,
   Github,
+  GitMerge,
   LayoutGrid,
   Lock,
   MessageCircle,
@@ -18,6 +19,7 @@ import { useAuthStore } from '@/stores/auth'
 
 const ICONS = {
   vendacore: LayoutGrid,
+  nexo: GitMerge,
   smarty: ShoppingBag,
   kanban: Columns3,
   discador: Phone,

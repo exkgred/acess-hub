@@ -20,6 +20,7 @@ export const CATEGORY_LABEL = {
 
 export const APP_TINT: Record<AppSlug, string> = {
   vendacore: 'bg-blue-500/15 text-blue-300 ring-blue-400/20',
+  nexo: 'bg-teal-500/15 text-teal-300 ring-teal-400/20',
   smarty: 'bg-amber-500/15 text-amber-300 ring-amber-400/20',
   kanban: 'bg-violet-500/15 text-violet-300 ring-violet-400/20',
   discador: 'bg-cyan-500/15 text-cyan-300 ring-cyan-400/20',

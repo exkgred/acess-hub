@@ -52,7 +52,7 @@ describe('GetWorkspaceUseCase', () => {
     );
   });
 
-  it('member comercial → só ERP, loja e chat', async () => {
+  it('member comercial → ERP, CRM, loja e chat', async () => {
     const userRepo = mockUserRepo();
     userRepo.findById.mockResolvedValue(member);
     const useCase = new GetWorkspaceUseCase(userRepo);
@@ -61,7 +61,7 @@ describe('GetWorkspaceUseCase', () => {
       .filter((app) => app.entitled)
       .map((app) => app.slug);
     expect(result.package.slug).toBe('COMERCIAL');
-    expect(unlocked).toEqual(['vendacore', 'smarty', 'chat']);
+    expect(unlocked).toEqual(['vendacore', 'nexo', 'smarty', 'chat']);
     expect(result.apps.find((app) => app.slug === 'discador')?.entitled).toBe(
       false,
     );

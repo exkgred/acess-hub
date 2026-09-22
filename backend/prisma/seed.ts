@@ -38,6 +38,7 @@ const SEED_LOGS: Array<{ userId: string; appSlug: string; hoursAgo: number }> = 
   { userId: 'user-recruiter', appSlug: 'vendacore', hoursAgo: 2 },
   { userId: 'user-recruiter', appSlug: 'discador', hoursAgo: 5 },
   { userId: 'user-comercial', appSlug: 'smarty', hoursAgo: 8 },
+  { userId: 'user-comercial', appSlug: 'nexo', hoursAgo: 4 },
   { userId: 'user-comercial', appSlug: 'vendacore', hoursAgo: 26 },
   { userId: 'user-operacao', appSlug: 'kanban', hoursAgo: 3 },
   { userId: 'user-operacao', appSlug: 'discador', hoursAgo: 12 },

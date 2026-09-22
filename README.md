@@ -1,6 +1,6 @@
 # Átrio
 
-O hall da suíte. Um login, um pacote (Full / Comercial / Operação) e os sistemas no mesmo launchpad — como um produto, não cinco demos soltas.
+O hall da suíte. Um login, um pacote (Full / Comercial / Operação) e os sistemas no mesmo launchpad — como um produto, não demos soltas.
 
 Backend em NestJS (Clean Architecture), frontend em React + Vite, PostgreSQL e Prisma.
 
@@ -9,7 +9,7 @@ Backend em NestJS (Clean Architecture), frontend em React + Vite, PostgreSQL e P
 ## O que o produto faz
 
 - Login único (JWT access + refresh)
-- Catálogo dos sistemas: VendaCore, Smarty, Kanban, Discador, Chat Observability e o chat
+- Catálogo dos sistemas: VendaCore, Nexo, Smarty, Kanban, Discador, Chat Observability e o chat
 - Pacotes que liberam módulos (`FULL`, `COMERCIAL`, `OPERACAO`)
 - Recrutador e admin veem a suíte inteira; member só o que o pacote inclui
 - Clique no card → auditoria + URL da demo + credenciais
