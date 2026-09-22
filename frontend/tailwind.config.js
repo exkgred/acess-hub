@@ -24,7 +24,6 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
     },
-    },
   },
   plugins: [],
 }
