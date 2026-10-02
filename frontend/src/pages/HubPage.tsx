@@ -4,6 +4,7 @@ import {
   Columns3,
   Copy,
   ExternalLink,
+  Flame,
   Github,
   GitMerge,
   LayoutGrid,
@@ -25,6 +26,7 @@ const ICONS = {
   discador: Phone,
   observability: Activity,
   chat: MessageCircle,
+  brasa: Flame,
 } as const
 
 const CATEGORIES = ['comercial', 'operacao', 'plataforma'] as const
