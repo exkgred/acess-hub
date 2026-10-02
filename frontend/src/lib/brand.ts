@@ -26,6 +26,7 @@ export const APP_TINT: Record<AppSlug, string> = {
   discador: 'bg-cyan-500/15 text-cyan-300 ring-cyan-400/20',
   observability: 'bg-emerald-500/15 text-emerald-300 ring-emerald-400/20',
   chat: 'bg-sky-500/15 text-sky-300 ring-sky-400/20',
+  brasa: 'bg-orange-500/15 text-orange-300 ring-orange-400/20',
 }
 
 export function initials(name: string): string {

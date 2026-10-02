@@ -8,6 +8,7 @@ export type AppSlug =
   | 'discador'
   | 'observability'
   | 'chat'
+  | 'brasa'
 
 export interface PublicUser {
   id: string

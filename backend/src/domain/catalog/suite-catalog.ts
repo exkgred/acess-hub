@@ -7,7 +7,8 @@ export type AppSlug =
   | 'kanban'
   | 'discador'
   | 'observability'
-  | 'chat';
+  | 'chat'
+  | 'brasa';
 
 export interface AppCredentials {
   email: string;
@@ -141,6 +142,22 @@ export const SUITE_APPS: SuiteApp[] = [
     category: 'plataforma',
     packages: ['FULL', 'COMERCIAL', 'OPERACAO'],
     credentials: null,
+  },
+  {
+    slug: 'brasa',
+    name: 'Brasa',
+    tagline: 'Roguelike de cartas da forja',
+    description:
+      'Último foleiro de Caldeira. Chapas de aço, mapa do Cinzeiro e a Fornalha Fria no fim da run.',
+    stack: 'NestJS · React · PostgreSQL',
+    url: 'https://frontend-puce-one-23.vercel.app/',
+    github: 'https://github.com/exkgred/brasa',
+    category: 'plataforma',
+    packages: ['FULL'],
+    credentials: {
+      email: 'player@brasa.dev',
+      password: 'password123',
+    },
   },
 ];
 
