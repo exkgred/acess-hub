@@ -94,8 +94,8 @@ App: http://localhost:5174
 O frontend sobe sozinho. Com `VITE_DEMO=true` a API é mockada no browser.
 
 1. No [Vercel](https://vercel.com/new) importe `exkgred/acess-hub`
-2. **Root Directory:** `frontend` (ou deixe a raiz: o `vercel.json` já builda `frontend`)
-3. Framework: Vite
+2. Preset **Services**: deixe só o serviço `frontend` (Vite, pasta `frontend/`)
+3. Se a tela pedir `vercel.json`, use o da raiz (já declara só o frontend)
 4. Variável: `VITE_DEMO=true` (já vem em `frontend/.env.production`)
 
 Login da demo: `recruiter@atrio.dev` / `password123` (já vem preenchido).
