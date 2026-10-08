@@ -184,7 +184,7 @@ export const SUITE_APPS: SuiteApp[] = [
     description:
       'Você diz o que precisa. O Perto escolhe o tipo de comércio e devolve os lugares mais próximos, só com o que a fonte confirmou.',
     stack: 'Node.js · Vercel · Cohere',
-    url: 'https://exkgred-perto.vercel.app/',
+    url: 'https://perto-gray.vercel.app/',
     github: 'https://github.com/exkgred/perto',
     category: 'plataforma',
     packages: ['FULL'],
