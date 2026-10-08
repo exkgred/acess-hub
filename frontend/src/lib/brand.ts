@@ -21,12 +21,14 @@ export const CATEGORY_LABEL = {
 export const APP_TINT: Record<AppSlug, string> = {
   vendacore: 'bg-blue-500/15 text-blue-300 ring-blue-400/20',
   nexo: 'bg-teal-500/15 text-teal-300 ring-teal-400/20',
+  visto: 'bg-rose-800/20 text-rose-200 ring-rose-400/25',
   smarty: 'bg-amber-500/15 text-amber-300 ring-amber-400/20',
   kanban: 'bg-violet-500/15 text-violet-300 ring-violet-400/20',
   discador: 'bg-cyan-500/15 text-cyan-300 ring-cyan-400/20',
   observability: 'bg-emerald-500/15 text-emerald-300 ring-emerald-400/20',
   chat: 'bg-sky-500/15 text-sky-300 ring-sky-400/20',
   brasa: 'bg-orange-500/15 text-orange-300 ring-orange-400/20',
+  perto: 'bg-emerald-700/25 text-emerald-100 ring-emerald-400/25',
 }
 
 export function initials(name: string): string {

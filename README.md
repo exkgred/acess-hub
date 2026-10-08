@@ -9,7 +9,7 @@ Backend em NestJS (Clean Architecture), frontend em React + Vite, PostgreSQL e P
 ## O que o produto faz
 
 - Login único (JWT access + refresh)
-- Catálogo dos sistemas: VendaCore, Nexo, Smarty, Kanban, Discador, Chat Observability e o chat
+- Catálogo dos sistemas: VendaCore, Nexo, Visto, Smarty, Kanban, Discador, Chat Observability, o chat, o Brasa e o Perto
 - Pacotes que liberam módulos (`FULL`, `COMERCIAL`, `OPERACAO`)
 - Recrutador e admin veem a suíte inteira; member só o que o pacote inclui
 - Clique no card → auditoria + URL da demo + credenciais
@@ -86,7 +86,7 @@ App: http://localhost:5174
 |---|---|---|---|
 | `recruiter@atrio.dev` | `password123` | RECRUITER | Full (vê tudo + auditoria) |
 | `admin@atrio.dev` | `password123` | ADMIN | Full (troca pacotes) |
-| `comercial@atrio.dev` | `password123` | MEMBER | Comercial (ERP + loja + chat) |
+| `comercial@atrio.dev` | `password123` | MEMBER | Comercial (ERP, Nexo, Visto, loja e chat) |
 | `operacao@atrio.dev` | `password123` | MEMBER | Operação (Discador + Kanban + chat) |
 
 ## Demo na Vercel (sem backend)

@@ -3,12 +3,14 @@ export type PackageSlug = 'FULL' | 'COMERCIAL' | 'OPERACAO'
 export type AppSlug =
   | 'vendacore'
   | 'nexo'
+  | 'visto'
   | 'smarty'
   | 'kanban'
   | 'discador'
   | 'observability'
   | 'chat'
   | 'brasa'
+  | 'perto'
 
 export interface PublicUser {
   id: string

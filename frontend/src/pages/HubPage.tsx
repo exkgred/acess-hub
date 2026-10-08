@@ -9,9 +9,11 @@ import {
   GitMerge,
   LayoutGrid,
   Lock,
+  MapPin,
   MessageCircle,
   Phone,
   ShoppingBag,
+  Stamp,
 } from 'lucide-react'
 import { APP_TINT, CATEGORY_LABEL, PACKAGE_LABEL, copyText } from '@/lib/brand'
 import { api, unwrap } from '@/lib/api'
@@ -21,12 +23,14 @@ import { useAuthStore } from '@/stores/auth'
 const ICONS = {
   vendacore: LayoutGrid,
   nexo: GitMerge,
+  visto: Stamp,
   smarty: ShoppingBag,
   kanban: Columns3,
   discador: Phone,
   observability: Activity,
   chat: MessageCircle,
   brasa: Flame,
+  perto: MapPin,
 } as const
 
 const CATEGORIES = ['comercial', 'operacao', 'plataforma'] as const

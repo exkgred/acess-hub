@@ -3,12 +3,14 @@ import type { PackageSlug, User, UserRole } from '../entities/user.entity';
 export type AppSlug =
   | 'vendacore'
   | 'nexo'
+  | 'visto'
   | 'smarty'
   | 'kanban'
   | 'discador'
   | 'observability'
   | 'chat'
-  | 'brasa';
+  | 'brasa'
+  | 'perto';
 
 export interface AppCredentials {
   email: string;
@@ -66,6 +68,22 @@ export const SUITE_APPS: SuiteApp[] = [
     packages: ['FULL', 'COMERCIAL'],
     credentials: {
       email: 'ana@nexo.dev',
+      password: 'password123',
+    },
+  },
+  {
+    slug: 'visto',
+    name: 'Visto',
+    tagline: 'Proposta pública com aceite',
+    description:
+      'Link sem login. O cliente aceita, o hash trava o conteúdo e o handoff aponta para o VendaCore.',
+    stack: 'NestJS · React · PostgreSQL',
+    url: 'https://visto-sigma.vercel.app/',
+    github: 'https://github.com/exkgred/visto',
+    category: 'comercial',
+    packages: ['FULL', 'COMERCIAL'],
+    credentials: {
+      email: 'marina@visto.dev',
       password: 'password123',
     },
   },
@@ -158,6 +176,19 @@ export const SUITE_APPS: SuiteApp[] = [
       email: 'player@brasa.dev',
       password: 'password123',
     },
+  },
+  {
+    slug: 'perto',
+    name: 'Perto',
+    tagline: 'O comércio mais perto do que você precisa',
+    description:
+      'Você diz o que precisa. O Perto escolhe o tipo de comércio e devolve os lugares mais próximos, só com o que a fonte confirmou.',
+    stack: 'Node.js · Vercel · Cohere',
+    url: 'https://exkgred-perto.vercel.app/',
+    github: 'https://github.com/exkgred/perto',
+    category: 'plataforma',
+    packages: ['FULL'],
+    credentials: null,
   },
 ];
 
